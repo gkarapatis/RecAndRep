@@ -1,0 +1,22 @@
+﻿<Window x:Class="RecAndRep.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecAndRep.Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="700
+        ">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="365*"/>
+            <ColumnDefinition Width="69*"/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox x:Name="RichTextBoxConsole" HorizontalAlignment="Left" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="10,50,0,10" IsReadOnly="True" Grid.ColumnSpan="4" Width="672"/>
+        <TextBox Name="TestCommandtxt" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="mouse-move 155;136" VerticalAlignment="Top" Width="189" Grid.ColumnSpan="2" />
+        <Button Content="Test" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="91,10,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
