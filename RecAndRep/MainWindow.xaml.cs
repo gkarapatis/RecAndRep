@@ -13,6 +13,8 @@ using System.Windows.Media;
 using RecAndRep.BOL;
 using RecAndRep.Server.Business;
 using RecAndRep.BOL.Model;
+using RecAndRep.Server;
+
 namespace RecAndRep
 {
     /// <summary>
@@ -31,6 +33,8 @@ namespace RecAndRep
         public MainWindow()
         {            
             InitializeComponent();
+            new InitializeCommands(repository).Initialize();
+
             SignalRServerManager.Instance.Start();
             _serverHubConnectionService = new ServerHubConnectionHandler("Server Machine", responseMessage, clientConected, clientDisconnected);
             Task.Run(() => _serverHubConnectionService.ConnectAsync());

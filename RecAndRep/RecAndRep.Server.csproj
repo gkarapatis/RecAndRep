@@ -87,6 +87,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="InitializeCommand.cs" />
     <Compile Include="ServerManager.cs" />
     <Compile Include="Startup.cs" />
     <Page Include="MainWindow.xaml">
