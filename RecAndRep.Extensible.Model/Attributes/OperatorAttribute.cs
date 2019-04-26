@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RecAndRep.Client.Business.Attributes
+namespace RecAndRep.Extensible.Model.Attributes
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class OperatorAttribute : Attribute

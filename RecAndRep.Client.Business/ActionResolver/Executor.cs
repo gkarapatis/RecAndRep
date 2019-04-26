@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using System.Reflection;
 using log4net;
-using RecAndRep.Client.Business.ActionResolver.Model;
+using RecAndRep.Extensible.Model.Model;
 
 namespace RecAndRep.Client.Business.ActionResolver
 {
     public class Executor
     {
         private readonly ILog log;
-        private object result;
-
         private object Instance { get; }
 
         private Dictionary<string, MethodInfo> InfoMethods { get; }

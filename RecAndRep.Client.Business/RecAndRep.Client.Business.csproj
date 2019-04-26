@@ -51,13 +51,10 @@
     <Compile Include="ActionResolver\Abstractions\IActionResolver.cs" />
     <Compile Include="ActionResolver\Executor.cs" />
     <Compile Include="ActionResolver\ActionResolver.cs" />
-    <Compile Include="ActionResolver\Model\ActionResponse.cs" />
     <Compile Include="ClientHubConnectionHandler.cs" />
     <Compile Include="Operations\KeyBoardOperations.cs" />
     <Compile Include="Operations\WindowOperations.cs" />
     <Compile Include="Operations\MouseOperations.cs" />
-    <Compile Include="Attributes\ActionAttribute.cs" />
-    <Compile Include="Attributes\OperatorAttribute.cs" />
     <Compile Include="Operators\KeyboardOperator.cs" />
     <Compile Include="Operators\WindowOperator.cs" />
     <Compile Include="Operators\MouseOperator.cs" />
@@ -67,6 +64,10 @@
     <ProjectReference Include="..\RecAndRep.Common.Business\RecAndRep.Common.Business.csproj">
       <Project>{1ad341a0-d781-4b99-a691-088e072ad426}</Project>
       <Name>RecAndRep.Common.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RecAndRep.Extensible.Model\RecAndRep.Extensible.Model.csproj">
+      <Project>{b2cc1cdb-6543-4dd8-a880-a3e822101422}</Project>
+      <Name>RecAndRep.Extensible.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

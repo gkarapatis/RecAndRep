@@ -109,6 +109,10 @@
       <Project>{1ad341a0-d781-4b99-a691-088e072ad426}</Project>
       <Name>RecAndRep.Common.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RecAndRep.Extensible.Model\RecAndRep.Extensible.Model.csproj">
+      <Project>{B2CC1CDB-6543-4DD8-A880-A3E822101422}</Project>
+      <Name>RecAndRep.Extensible.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />

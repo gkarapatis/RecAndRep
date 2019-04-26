@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecAndRep.Tests", "RecAndRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecAndRep.ExternalAssembly", "RecAndRep.ExternalAssembly\RecAndRep.ExternalAssembly.csproj", "{8B5E660A-6C60-458D-BC6A-95777A9362D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecAndRep.Extensible.Model", "RecAndRep.Extensible.Model\RecAndRep.Extensible.Model.csproj", "{B2CC1CDB-6543-4DD8-A880-A3E822101422}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{8B5E660A-6C60-458D-BC6A-95777A9362D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B5E660A-6C60-458D-BC6A-95777A9362D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B5E660A-6C60-458D-BC6A-95777A9362D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CC1CDB-6543-4DD8-A880-A3E822101422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CC1CDB-6543-4DD8-A880-A3E822101422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CC1CDB-6543-4DD8-A880-A3E822101422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CC1CDB-6543-4DD8-A880-A3E822101422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{18A839A4-55AC-4872-8590-D50BAC64F746} = {60B769CD-0547-448B-BBB1-959A5C0ECC36}
 		{16A481F1-B085-4F88-A036-1BB860CB894C} = {9183D362-6656-4EFA-B75C-EB8F3BCDB820}
 		{8B5E660A-6C60-458D-BC6A-95777A9362D9} = {9183D362-6656-4EFA-B75C-EB8F3BCDB820}
+		{B2CC1CDB-6543-4DD8-A880-A3E822101422} = {60B769CD-0547-448B-BBB1-959A5C0ECC36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F714DABA-2099-4A7E-B121-ACC668378DC1}

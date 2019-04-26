@@ -1,5 +1,5 @@
-﻿using RecAndRep.Client.Business.ActionResolver.Model;
-using RecAndRep.Client.Business.Attributes;
+﻿using RecAndRep.Extensible.Model.Model;
+using RecAndRep.Extensible.Model.Attributes;
 using RecAndRep.Client.Business.Operations;
 using System;
 using System.Diagnostics;

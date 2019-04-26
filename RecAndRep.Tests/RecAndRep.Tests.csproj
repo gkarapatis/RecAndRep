@@ -71,6 +71,10 @@
       <Project>{9e149260-da46-4fa8-8998-deef22e26f68}</Project>
       <Name>RecAndRep.Client.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RecAndRep.Extensible.Model\RecAndRep.Extensible.Model.csproj">
+      <Project>{B2CC1CDB-6543-4DD8-A880-A3E822101422}</Project>
+      <Name>RecAndRep.Extensible.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
