@@ -70,9 +70,13 @@ namespace RecAndRep
             });
         }
 
-
+        private DateTime lastButton_Click;
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            if (lastButton_Click!= DateTime.MinValue && (DateTime.Now - lastButton_Click).TotalMilliseconds < 500)
+                return;
+            lastButton_Click = DateTime.Now;
+
             var client = _clients.LastOrDefault();
             if (client == null)
             {
@@ -91,11 +95,6 @@ namespace RecAndRep
             {
                 _serverHubConnectionService.SendToClientUser(client, refId(), ((Command)item).Description);
             }
-
-            // _serverHubConnectionService.SendToClientUser(client, refId(), "window-select notepad");
-            // _serverHubConnectionService.SendToClientUser(client, refId(), "mouse-move 70;100");
-            // _serverHubConnectionService.SendToClientUser(client, refId(), "mouse-click Single");
-            // _serverHubConnectionService.SendToClientUser(client, refId(), "keyboard-sendkeys karapatinko");
         }
 
         int _refId = 100;
